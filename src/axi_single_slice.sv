@@ -37,6 +37,7 @@ module axi_single_slice #(
     ) i_fifo (
         .clk_i      ( clk_i             ),
         .rst_ni     ( rst_ni            ),
+	.clr_i      ( clr_i             ),
         .flush_i    ( 1'b0              ),
         .threshold_o (), // NC
         .testmode_i ( testmode_i        ),
